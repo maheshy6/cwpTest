@@ -4,7 +4,7 @@ import "dotenv/config"
 import destinationRoute from "./routes/destination.route.js";
 import userRoute from "./routes/user.route.js";
 import tripRoute from "./routes/itinerary.route.js";
-import db from "./mongodb.connection.js";
+
 
 const app=express();
 
