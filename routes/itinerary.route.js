@@ -4,7 +4,7 @@ import { addTrip, deleteTrip, getTrip } from "../controller/itinerary.controller
 const tripRoute = Router()
 
 tripRoute.post("/",addTrip)
-tripRoute.post("/:id",deleteTrip)
+tripRoute.delete("/:id",deleteTrip)
 tripRoute.get("/",getTrip)
 // userRoute.post("/forgetpassword",forgetPassword)
 // userRoute.post("/resetpassword",resetPassword)

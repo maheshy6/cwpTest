@@ -73,9 +73,9 @@ const addTrip=async(req,res)=>{
 //delete Trip
 const deleteTrip=async(req,res)=>{
     const {id}=req.params
-    let _id = toString(id)
+    
     try {
-        const updatedTrips = await Trip.findByIdAndDelete({_id})
+        const updatedTrips = await Trip.findByIdAndDelete(id)
         res.status(200).json(updatedTrips) 
 
     } 
